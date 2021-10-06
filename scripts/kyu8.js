@@ -8,3 +8,9 @@ function multiTable(number) {
   }
   return str;
 }
+
+// Watermelon
+function divide(weight){
+  //your code here
+  return (weight - 2) % 2 === 0 && weight > 3;
+}

@@ -12,5 +12,5 @@ function multiTable(number) {
 // Watermelon
 function divide(weight){
   //your code here
-  return (weight - 2) % 2 === 0 && weight > 3;
+  return weight % 2 === 0 && weight > 3;
 }

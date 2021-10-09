@@ -7,6 +7,7 @@ function travelChessboard(s){
   function factorial(n) {
     return (n != 1) ? n * factorial(n - 1) : 1;
   }
+  if (x2 === x1 || y2 === y1 ) return 1;
 	return factorial(x2 - x1 + y2 - y1)/(factorial(x2 - x1) * factorial(y2 - y1));
 }
 console.log(travelChessboard('(2 2)(4 5)'));

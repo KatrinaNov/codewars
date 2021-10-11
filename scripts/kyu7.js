@@ -37,3 +37,9 @@ function missingNo(nums) {
   }
 }
 console.log(missingNo(arr1));
+
+// Simple Fun #152: Invite More Women?
+function inviteMoreWomen(L) { 
+  return L.filter(item => item === 1).length > L.length / 2;
+}
+console.log(inviteMoreWomen([1, -1]));

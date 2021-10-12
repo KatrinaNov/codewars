@@ -23,7 +23,7 @@ function connotation(str) {
   const pos = strToArr.filter(word => word.charAt(0).toLowerCase() < 'n');
   return 2 * pos.length >= strToArr.length;
 }
-console.log(connotation(str));
+// console.log(connotation(str));
 
 // Find the Missing Number
 /*You are given an unsorted array containing all the integers from 0 to 100 inclusively. However, one number is missing. Write a function to find and return this number. What are the time and space complexities of your solution?*/
@@ -36,10 +36,19 @@ function missingNo(nums) {
     } 
   }
 }
-console.log(missingNo(arr1));
+// console.log(missingNo(arr1));
 
 // Simple Fun #152: Invite More Women?
 function inviteMoreWomen(L) { 
   return L.filter(item => item === 1).length > L.length / 2;
 }
-console.log(inviteMoreWomen([1, -1]));
+// console.log(inviteMoreWomen([1, -1]));
+
+// Are they square? Проверка, все ли числа квадратные
+var isSquare = function(arr){
+  if (arr.length === 0) return;
+  const filterArr = arr.filter(n => (Math.sqrt(n)%1 === 0));
+  console.log(filterArr);
+  return arr.length === filterArr.length;
+}
+console.log(isSquare([1, 4, 7]));

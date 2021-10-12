@@ -47,8 +47,11 @@ function inviteMoreWomen(L) {
 // Are they square? Проверка, все ли числа квадратные
 var isSquare = function(arr){
   if (arr.length === 0) return;
-  const filterArr = arr.filter(n => (Math.sqrt(n)%1 === 0));
-  console.log(filterArr);
+  const filterArr = arr.filter(n => (Math.sqrt(n)%1 === 0)); 
   return arr.length === filterArr.length;
+}
+// второй вариант
+var isSquare = function(arr){
+ return (arr.length) ? arr.every(x=>Math.sqrt(x)%1==0) : undefined;
 }
 console.log(isSquare([1, 4, 7]));

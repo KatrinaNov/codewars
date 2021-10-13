@@ -55,3 +55,8 @@ var isSquare = function(arr){
  return (arr.length) ? arr.every(x=>Math.sqrt(x)%1==0) : undefined;
 }
 console.log(isSquare([1, 4, 7]));
+
+//Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
+function rowSumOddNumbers(n) {
+	return Math.pow(n, 3);
+}

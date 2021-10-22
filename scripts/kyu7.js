@@ -60,3 +60,11 @@ console.log(isSquare([1, 4, 7]));
 function rowSumOddNumbers(n) {
 	return Math.pow(n, 3);
 }
+
+var number = function(busStops){
+  let people = 0;
+  for (let i = 0; i < busStops.length; i++) {
+    people = people + busStops[i][0] - busStops[i][1];
+  }
+  return people;
+}

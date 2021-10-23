@@ -14,3 +14,7 @@ function divide(weight){
   //your code here
   return weight % 2 === 0 && weight > 3;
 }
+//Terminal game move function
+function move (position, roll) {
+  return position + roll*2;
+}

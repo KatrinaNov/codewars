@@ -81,5 +81,5 @@ function generatePairs(m, n) {
 }
 //Valid number to 2 decimal places
 function validNumber(num){
-  return !!num.match(/^[\+-]?\d*(\.\d{2})$/);
+  return /^[\+-]?\d*(\.\d{2})$/.test(num);
 }

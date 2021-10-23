@@ -79,4 +79,7 @@ function generatePairs(m, n) {
   }
   return arr;
 }
-console.log(generatePairs(2, 4));
+//Valid number to 2 decimal places
+function validNumber(num){
+  return !!num.match(/^[\+-]?\d*(\.\d{2})$/);
+}

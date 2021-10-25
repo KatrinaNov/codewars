@@ -18,3 +18,22 @@ function divide(weight){
 function move (position, roll) {
   return position + roll*2;
 }
+
+function correct(string)
+{
+	var output = "";
+  for (var i = 0; i < string.length; i++) {
+    console.log(output, typeof string[i]);
+    if (string[i] === '5') {
+      output += 'S';
+    } else if (string[i] === '0') {
+       output += 'O';
+    } else if (string[i] === '1') {
+       output += 'I';
+    } else {
+      output += string[i];
+    }
+  }
+   return output;
+}
+console.log(correct("L0ND0N"));

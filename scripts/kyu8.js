@@ -43,3 +43,8 @@ function check(a, x) {
 return a.includes(x);
 }
 console.log(check([101, 45, 75, 105, 99, 107], 107));
+
+//Expressions Matter
+function expressionMatter(a, b, c) {
+  return Math.max(a+b+c, a*b*c, (a+b)*c, a*(b+c), a*b+c, a+b*c);
+}

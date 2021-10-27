@@ -48,3 +48,7 @@ console.log(check([101, 45, 75, 105, 99, 107], 107));
 function expressionMatter(a, b, c) {
   return Math.max(a+b+c, a*b*c, (a+b)*c, a*(b+c), a*b+c, a+b*c);
 }
+//Area of a Square
+function squareArea(A){
+  return +Math.pow(2*A/Math.PI,2).toFixed(2);
+}
